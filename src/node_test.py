@@ -9,7 +9,7 @@ class Test_node(unittest.TestCase):
         assert (t.depth == 0)
 
     def test_possible_moves(self):
-        # * test if the explores nodes are ignored
+        # * test if the explored nodes are ignored
         first_node = mine.node()
         first_moves = first_node.next_possible_moves()
         self.assertTrue(len(first_moves)==3)
