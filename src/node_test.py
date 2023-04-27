@@ -17,6 +17,7 @@ class Test_node(unittest.TestCase):
         for node in second_moves:
             self.assertFalse(node.equal(first_node))
 
+#*tests if the method solution finds the optimal solution
     def test_solution(self):
         first_node = mine.node()
         solution,nb = first_node.solution(BFS=True)
